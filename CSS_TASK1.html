@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        table{
+            background-color: #96d4d3;
+        }
+        table,tr,th,td{
+            border-radius: 20px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            width: 750px;
+            height: 500px;
+            align-items: center;
+        }
+        .box-container{
+            display: grid;
+            grid-template-columns: 140px 140px 140px;
+            column-gap: 30px;
+            row-gap: 30px;
+        }
+        .box{
+            height: 90px;
+            width: 140px;
+            border: 4px #98cc2b solid;
+        }
+    </style>
+</head>
+<body>
+    <table border="2px" cellpadding="5px" cellspacing="4px">  
+        <tr><th width="300px">FirstName</th><th width="300px">LastName</th><th width="150px">Age</th></tr>
+        <tr><td width="300px">Jill</td><td width="300px">Smith</td><td width="150px"> 50</td></tr>
+        <tr><td width="300px">Eve</td><td width="300px">Jackson</td><td width="150px">94</td></tr>
+        <tr><td width="300px">John</td><td width="300px">Doe</td><td width="150px">80</td></tr>
+    </table>
+    <div class="container">
+        <div class="box-container">
+            <div class="box" style="border-radius: 10px;"></div>
+            <div class="box" style="border-radius: 12px;"></div>
+            <div class="box" style="border-radius: 25px;"></div>
+            <div class="box" style="border-radius: 15px;"></div>
+            <div class="box" style="border-radius: 8px;"></div>
+            <div class="box" style="border-radius: 28px;"></div>
+            <div class="box" style="
+                border-top-left-radius: 90px 60px;
+                border-top-right-radius: 90px 60px;
+                border-bottom-left-radius: 90px 60px;
+                border-bottom-right-radius: 90px 60px;
+            "></div>
+            <div class="box" style="border-radius: 8px;"></div>
+            <div class="box" style="
+                border-top-left-radius: 8px 8px;
+                border-top-right-radius: 25px 25px;
+                border-bottom-left-radius: 45px 35px;
+                border-bottom-right-radius: 8px 8px;
+            "></div>
+        </div>
+    </div>
+</body>
+</html>

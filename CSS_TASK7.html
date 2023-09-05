@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 7</title>
+    <style>
+        *{
+            font-size: 36px;
+            color: white;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: #a22b55;
+        }
+        .container{
+            width: auto;
+            height: auto;
+            display: grid;
+            padding: 50px;
+            
+        }
+        form{
+            display: grid;
+            background-color: #75203f;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 100px;
+            margin-top: 40px;
+        }
+        
+        select,textarea,input{
+            font-size: 24px;
+        }
+        select{
+            color: black;
+        }
+        .radio input{
+            scale: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <form action="#">
+            <table cellspacing="5px">
+                <tr><td>Name:</td><td><input type="text" placeholder="your name" name="name"></td></tr>
+                <tr><td>Email:</td><td><input type="text" placeholder="your email" name="emial"></td></tr>
+                <tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
+                <tr><td>Phone Number:</td><td><input type="text" name="Phone"></td></tr>
+                <tr><td>Gender</td><td class="radio">
+                    Male: <input type="radio" name="gender" id="gender"> Female:<input type="radio" name="gender" id="gender"> Other:<input type="radio" name="gender" id="gender">
+                </td></tr>
+                <tr><td>language</td><td>
+                    <select name="language" id="language">
+                        <option value="select">Select language</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Japanese">Japanese</option>
+                    </select>
+                </td></tr>
+                <tr><td>Zip Code:</td><td><input type="text" ></td></tr>
+                <tr><td>About</td><td><textarea name="about" id="about" cols="21" rows="2" placeholder="write about yourself..."></textarea></td></tr>
+            </table>
+            <input type="submit" value="Register" name="Register" style="
+                border-radius: 10px;
+                color: black;
+                font-size: 40px;
+            ">
+        </form>
+    </div>
+</body>
+</html>

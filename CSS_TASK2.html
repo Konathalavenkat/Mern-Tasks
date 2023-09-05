@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            column-gap: 50px;
+        }
+        .horizontal,.vertical{
+            padding: 15px;
+            border: 1px black solid;
+        }
+        nav a{
+            background-color: rgb(173, 217, 230);
+            width: 450px;
+            height: 95px;
+            display: block;
+            margin: none;
+            font-size: xx-large;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover{
+            background-color: orange;
+        }
+        p{
+            margin-left: 25px;
+        }
+        ul{
+            list-style-type: none;
+            display: grid;
+            height: 75px;
+            grid-template-columns: auto auto auto auto;
+            justify-content: start;
+            align-items: center;
+            background-color: rgb(177, 177, 177);
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline;
+            height: 75px;
+            text-align: center;
+            border-right: 1px blue solid;
+            display: grid;
+            align-items: center;
+            font-size: xx-large;
+        }
+        li a{
+           padding-left: 30px;
+           padding-right: 30px;
+            text-decoration: none;
+        }
+        li:hover{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vertical">
+            <center><b>Vertical Navigation Bar</b></center><br>
+            <nav>
+                <a href="#"><p>Home</p></a>
+                <a href="#"><p>Java</p></a>
+                <a href="#"><p>CSS</p></a>
+                <a href="#"><p>HTML</p></a>
+                <a href="#"><p>Bootstrap</p></a>
+            </nav>
+        </div>
+        <div class="horizontal">
+            <center><b>Horizonatal Navigation Bar</b></center><br>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

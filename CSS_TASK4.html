@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        nav{
+            margin-top: 35px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 115px auto;
+        }
+        .container div{
+            margin-top: 15px;
+        }
+        body{
+            margin: 0;
+        }
+        a{
+            display: block;
+            height: 65px;
+            width: 65px;
+            border-top-right-radius: 10px 10px;
+            border-bottom-right-radius: 10px 10px;
+            margin-bottom: 15px;
+            transition: 0.12s;
+        }
+        a:hover{
+            cursor: pointer;
+            scale: 1.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#" style="background-color: #04a96d;"></a>
+            <a href="#" style="background-color: #2196f3;"></a>
+            <a href="#" style="background-color: #f44236;"></a>
+            <a href="#" style="background-color: #555555;"></a>
+        </nav>
+        <div>
+            <h2>Hoverable Sidenav Buttons</h2>
+            Hover over the buttons in the left side navigations to open them
+        </div>
+    </div>
+</body>
+</html>
